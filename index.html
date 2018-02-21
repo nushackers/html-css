@@ -413,6 +413,127 @@
 						as it's easier to calculate
 					</div>
 				</section>
+				<section>
+					<h3>Flexbox</h3>
+					<pre><code data-trim>
+						display: flex;
+						/* by default */
+						flex-direction: row;
+						/* x-axis in row, y-axis in col */
+						align-items: center;
+						/* y-axis in row, x-axis in col */
+						justify-content: center;
+					</code></pre>
+				</section>
+				<section>
+					<h3>Flexbox</h3>
+					<div>
+						<style>
+						  #gallery {
+							display: flex;
+							justify-content: space-around;
+						  }
+						</style>
+						<ul id="gallery">
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+						</ul>
+					</div>
+					<pre><code data-trim>
+						display: flex;
+						/* by default */
+						flex-direction: row;
+						/* y-axis in row, x-axis in col */
+						align-items: center;
+						/* x-axis in row, y-axis in col */
+						justify-content: center;
+					</code></pre>
+				</section>
+				<section>
+					<h3>Grid</h3>
+					<div>
+						Used for two-dimensional layout.
+						Great for page structures.
+					</div>
+					<pre><code data-trim>
+						display: grid;
+					</code></pre>
+				</section>
+				<section>
+					<h3>Grid</h3>
+					<div>
+						<style>
+						#page {
+						  display: grid;
+						  grid-template-areas: "head head"
+						    				   "nav  main"
+						    				   "nav  foot";
+						  grid-template-rows: repeat(1fr, 3);
+						  grid-template-columns: 150px 1fr;
+						}
+
+						#header {
+						  grid-area: head;
+						  background-color: #8ca0ff;
+						}
+
+						#nav {
+						  grid-area: nav;
+						  background-color: #ffa08c;
+						}
+
+						#main {
+						  grid-area: main;
+						  background-color: #ffff64;
+						}
+
+						#footer {
+						  grid-area: foot;
+						  background-color: #8cffa0;
+						}
+						</style>
+						<div id="page">
+						<header id="header">Header</header>
+						<nav id="nav">Nav</nav>
+						<main id="main">Main area</main>
+						<footer id="footer">Footer</footer>
+						</div>
+					</div>
+					<div style="display: flex; align-items: start;">
+						<pre><code data-trim>
+							.page {
+							  display: grid;
+							  grid-template-areas: "head head"
+									       "nav  main"
+									       "nav  foot";
+							  grid-template-rows: repeat(1fr, 3);
+							  grid-template-columns: 150px 1fr;
+							}
+
+							.header {
+							  grid-area: head;
+							  background-color: #8ca0ff;
+							}
+						</code></pre>
+						<pre><code data-trim>
+							.nav {
+							  grid-area: nav;
+							  background-color: #ffa08c;
+							}
+
+							.main {
+							  grid-area: main;
+							  background-color: #ffff64;
+							}
+
+							.footer {
+							  grid-area: foot;
+							  background-color: #8cffa0;
+							}
+						</code></pre>
+					</div>
+				</section>
 			</div>
 		</div>
 

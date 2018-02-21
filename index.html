@@ -291,6 +291,128 @@
 					<div>Such as video, article, button, form...</div>
 					<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">MDN Resource</a>
 				</section>
+				<section>
+					<h2>CSS</h2>
+					<h3>
+						<b>C</b>ascading
+						<b>S</b>tyle
+						<b>S</b>heets
+					</h3>
+					<div class="fragment fade-up">Easy way to describe how
+						<mark>HTML elements</mark> should be displayed</div>
+				</section>
+				<section>
+					<h3>Ways to use css</h3>
+					<h4>inline-style</h4>
+					<pre style="text-align: center;"><code data-trim>
+						<div style="background: yellow;">Hello</div>
+					</code></pre>
+					<div style="background: yellow;">Hello</div>
+				</section>
+				<section>
+					<h3>Ways to use css</h3>
+					<h4>id</h4>
+					<pre><code data-trim>
+						<style>
+						#hello {
+						  background: yellow;
+						}
+						</style>
+						<div id="hello">Hello</div>
+					</code></pre>
+					<style>
+						#hello {
+							background: yellow;
+						}
+					</style>
+					<div id="hello">Hello</div>
+				</section>
+				<section>
+					<h3>Ways to use css</h3>
+					<h4>class</h4>
+					<pre><code data-trim>
+						<style>
+						.hello {
+						  background: yellow;
+						}
+						</style>
+						<div class="hello">Hello</div>
+					</code></pre>
+					<style>
+						.hello {
+							background: yellow;
+						}
+					</style>
+					<div class="hello">Hello</div>
+				</section>
+				<section>
+					<h3>Ways to use css</h3>
+					<ul>
+						<li>inline-style</li>
+						<li>id</li>
+						<li class="fragment fade-up"><mark>class</mark></li>
+					</ul>
+					<div class="fragment fade-up">
+						Use class. They're reusable, easy to read and maintain.
+					</div>
+				</section>
+				<section>
+					<h3>Stylistic css properties</h3>
+					<h4>Let's try them out</h4>
+					<ul>
+						<li>background</li>
+						<li>color</li>
+						<li>font-family</li>
+						<li>font-weight</li>
+					</ul>
+				</section>
+				<section>
+					<h3>CSS size units</h3>
+					<dl>
+						<dd>px</dd>
+					</dl>
+					<ul>
+						<li>px - pixels</li>
+						<li>em - em to font-size</li>
+						<li>rem - rem to base font-size</li>
+						<li>%  - percentage wrt width</li>
+						<li>fr - fraction</li>
+					</ul>
+					<small>There's more, but not commonly used.</small>
+				</section>
+				<section>
+					<h3>Sizing css properties</h3>
+					<ul>
+						<li>width & height</li>
+						<li>padding</li>
+						<li>border</li>
+						<li>margin</li>
+					</ul>
+				</section>
+				<section>
+					<h3>CSS Box-model</h3>
+					<mark>Important</mark>
+					<div style="background: lightpink; padding: 1rem;">
+						margin
+						<div style="background: cornflowerblue; padding: 1rem;">
+							border
+							<div style="background: lemonchiffon; padding: 1rem;">
+								padding
+								<div style="background: paleturquoise; padding: 1rem;">content</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h3>CSS Box-model</h3>
+					<div>
+						Size of a box (width & height) is accounting for content only.
+					</div>
+					<div style="margin-top: 2rem;">
+						Modern css uses <pre style="text-align: center;"><code>box-sizing: border-box;</code></pre>
+						as it's easier to calculate
+					</div>
+				</section>
 			</div>
 		</div>
 

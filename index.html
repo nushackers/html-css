@@ -1,127 +1,165 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>HTML & CSS</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/simple.css">
+  <title>HTML & CSS</title>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/rainbow.css">
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/simple.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>
-					<h1>HTML & CSS</h1>
-					<p>Slides at:
-					<span style="display: block;">https://goo.gl/2JLRGu</span>
-					<span style="display: block;">https://nushackers.github.io/html-css</span>
-					</p>
-				</section>
-				<section>
-					<h2>Internet</h2>
-					<h3>Gateway to the world</h3>
-				</section>
-				<section>
-					<h2>HTML</h2>
-					<h3>
-						<b>H</b>yper
-						<b>T</b>ext
-						<b>M</b>arkup
-						<b>L</b>anguage
-					</h3>
-					<div class="fragment fade-up">Easy way to describe how
-						<mark>text</mark> should be displayed</div>
-				</section>
-				<section>
-					<h3>When you type: google.com</h3>
-					<ul style="list-style: none; margin: 0; padding: 0;">
-						<li class="fragment fade-up">you: hi google's server</li>
-						<li class="fragment fade-up" style="margin-left: 5rem; background: yellow;">server: here's the html</li>
-						<li class="fragment fade-up">you: oh I need the css file too</li>
-						<li class="fragment fade-up" style="margin-left: 5rem; background: yellow;">server: here's the css</li>
-					</ul>
-				</section>
-				<section>
-					<h2>Tags</h2>
-					<h4>create HTML elements</h4>
-					<div>Declared with open and closing tags like so: <mark>&lt;element&gt;</mark>content<mark>&lt;/element&gt;</mark></div>
-					<div class="fragment fade-up">Or occassionally with a self-closing tag: <mark>&lt;element&gt;</mark></div>
-				</section>
-				<section>
-					<table>
-						<thead>
-							<th>HTML</th>
-							<th>Output</th>
-						</thead>
-						<tbody>
-							<tr>
-								<td><pre style="width: auto;"><code data-trim>
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="lib/css/rainbow.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+        <h1>HTML & CSS</h1>
+        <p>Slides at:
+          <span style="display: block;">https://goo.gl/2JLRGu</span>
+          <span style="display: block;">https://nushackers.github.io/html-css</span>
+        </p>
+      </section>
+      <section>
+        <h2>Internet</h2>
+        <h3>Gateway to the world</h3>
+      </section>
+      <section>
+        <h2>HTML</h2>
+        <h3>
+          <b>H</b>yper
+          <b>T</b>ext
+          <b>M</b>arkup
+          <b>L</b>anguage
+        </h3>
+        <div class="fragment fade-up">Easy way to describe how
+          <mark>text</mark> should be displayed</div>
+      </section>
+      <section>
+        <h3>When you type: google.com</h3>
+        <ul style="list-style: none; margin: 0; padding: 0;">
+          <li class="fragment fade-up">you: hi google's server</li>
+          <li class="fragment fade-up" style="margin-left: 5rem; background: yellow;">server: here's the html</li>
+          <li class="fragment fade-up">you: oh I need the css file too</li>
+          <li class="fragment fade-up" style="margin-left: 5rem; background: yellow;">server: here's the css</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Tags</h2>
+        <h4>create HTML elements</h4>
+        <div>Declared with open and closing tags like so:
+          <mark>&lt;element&gt;</mark>content
+          <mark>&lt;/element&gt;</mark>
+        </div>
+        <div class="fragment fade-up">Or occassionally with a self-closing tag:
+          <mark>&lt;element&gt;</mark>
+        </div>
+      </section>
+      <section>
+        <table>
+          <thead>
+            <th>HTML</th>
+            <th>Output</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <pre style="width: auto;"><code data-trim>
 								<h1>h1</h1>
-								</code></pre></td>
-								<td><h1 style="font-size: 4.5rem">h1</h1></td>
-							</tr>
-							<tr>
-								<td><pre style="width: auto;"><code data-trim>
+								</code></pre>
+              </td>
+              <td>
+                <h1 style="font-size: 4.5rem">h1</h1>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <pre style="width: auto;"><code data-trim>
 								<h2>h2</h2>
-								</code></pre></td>
-								<td><h2 style="font-size: 3.5rem">h2</h2></td>
-							</tr>
-							<tr>
-								<td><pre style="width: auto;"><code data-trim>
+								</code></pre>
+              </td>
+              <td>
+                <h2 style="font-size: 3.5rem">h2</h2>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <pre style="width: auto;"><code data-trim>
 								<h3>h3</h3>
-								</code></pre></td>
-								<td><h3 style="font-size: 2.8rem">h3</h3></td>
-							</tr>
-							<tr>
-								<td><pre style="width: auto;"><code data-trim>
+								</code></pre>
+              </td>
+              <td>
+                <h3 style="font-size: 2.8rem">h3</h3>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <pre style="width: auto;"><code data-trim>
 								<h4>h4</h4>
-								</code></pre></td>
-								<td><h4 style="font-size: 2.25rem">h4</h4></td>
-							</tr>
-							<tr>
-								<td><pre style="width: auto;"><code data-trim>
+								</code></pre>
+              </td>
+              <td>
+                <h4 style="font-size: 2.25rem">h4</h4>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <pre style="width: auto;"><code data-trim>
 								<h5>h5</h5>
-								</code></pre></td>
-								<td><h5 style="font-size: 2rem">h5</h5></td>
-							</tr>
-							<tr>
-								<td><pre style="width: auto;"><code data-trim>
+								</code></pre>
+              </td>
+              <td>
+                <h5 style="font-size: 2rem">h5</h5>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <pre style="width: auto;"><code data-trim>
 								<h6>h6</h6>
-								</code></pre></td>
-								<td><h6 style="font-size: 1.5rem">h6</h6></td>
-							</tr>
-						</tbody>
-					</table>
-				</section>
-				<section>
-					<h3>Many elements make a person</h3>
-					<ol style="list-style: none;">
-					<li>
-						head <span class="fragment fade-left">: <mark>describes</mark></span>
-					</li>
-					<li>
-						body <span class="fragment fade-left">: <mark>content</mark></span>
-					</li>
-					</ol>
-				</section>
-				<section>
-					<h3>Many elements make a <s>person</s> webpage</h3>
-					<div>
-					<pre><code data-trim>
+								</code></pre>
+              </td>
+              <td>
+                <h6 style="font-size: 1.5rem">h6</h6>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section>
+        <h3>Many elements make a person</h3>
+        <ol style="list-style: none;">
+          <li>
+            head
+            <span class="fragment fade-left">:
+              <mark>describes</mark>
+            </span>
+          </li>
+          <li>
+            body
+            <span class="fragment fade-left">:
+              <mark>content</mark>
+            </span>
+          </li>
+        </ol>
+      </section>
+      <section>
+        <h3>Many elements make a
+          <s>person</s> webpage</h3>
+        <div>
+          <pre><code data-trim>
 						&lt;!DOCTYPE html&gt;
 						&lt;html&gt;
 						  &lt;head&gt;
@@ -132,137 +170,165 @@
 						  &lt;/body&gt;
 						&lt;/html&gt;
 					</code></pre>
-					</div>
-					<a href="https://raw.githubusercontent.com/nushackers/html-css/master/index.html">HTML for these slides</a>
-				</section>
-				<section>
-					<h3>Hands on</h3>
-					<a href="https://thimble.mozilla.org/en-US/projects/new">
-						https://thimble.mozilla.org/projects/new
-					</a>
-					<p>
-						<mark>Alternatively,</mark>
-						<ol>
-							<li>Create a "index.html" file</li>
-							<li>Drag file into browser</li>
-							<li>Edit, save, then reload browser</li>
-						</ol>
-					</p>
-				</section>
-				<section>
-					<table>
-						<thead>
-							<th>HTML</th>
-							<th>Output</th>
-						</thead>
-						<tbody>
-							<tr>
-								<td><pre style="width: auto;"><code data-trim class="html">
+        </div>
+        <a href="https://raw.githubusercontent.com/nushackers/html-css/master/index.html">HTML for these slides</a>
+      </section>
+      <section>
+        <h3>Hands on</h3>
+        <a href="https://thimble.mozilla.org/en-US/projects/new">
+          https://thimble.mozilla.org/projects/new
+        </a>
+        <p>
+          <mark>Alternatively,</mark>
+          <ol>
+            <li>Create a "index.html" file</li>
+            <li>Drag file into browser</li>
+            <li>Edit, save, then reload browser</li>
+          </ol>
+        </p>
+      </section>
+      <section>
+        <table>
+          <thead>
+            <th>HTML</th>
+            <th>Output</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <pre style="width: auto;"><code data-trim class="html">
 								<div>content division</div>
-								</code></pre></td>
-								<td><div>content division</div></td>
-							</tr>
-							<tr>
-								<td><pre style="width: auto;"><code data-trim>
+								</code></pre>
+              </td>
+              <td>
+                <div>content division</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <pre style="width: auto;"><code data-trim>
 								<p>paragraph</p>
-								</code></pre></td>
-								<td><p>paragraph</p></td>
-							</tr>
-							<tr>
-								<td><pre style="width: auto;"><code data-trim>
+								</code></pre>
+              </td>
+              <td>
+                <p>paragraph</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <pre style="width: auto;"><code data-trim>
 								<!--I am not shown-->
-								</code></pre></td>
-								<td><!--I am not shown--></td>
-							</tr>
-						</tbody>
-					</table>
-				</section>
-				<section>
-					<h2>Attributes</h2>
-					<h4>give tags meaning</h4>
-					Used in the opening tag
-					<div>
-						<mark>&lt;element attr="thing"&gt;</mark>content
-						<mark>&lt;/element&gt;</mark>
-					</div>
-				</section>
-				<section>
-					<table>
-						<thead>
-							<th>HTML</th>
-							<th>Output</th>
-						</thead>
-						<tbody>
-							<tr>
-								<td style="vertical-align: top;"><pre style="width: auto; white-space: pre-wrap;"><code data-trim class="html">
+								</code></pre>
+              </td>
+              <td>
+                <!--I am not shown-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section>
+        <h2>Attributes</h2>
+        <h4>give tags meaning</h4>
+        Used in the opening tag
+        <div>
+          <mark>&lt;element attr="thing"&gt;</mark>content
+          <mark>&lt;/element&gt;</mark>
+        </div>
+      </section>
+      <section>
+        <table>
+          <thead>
+            <th>HTML</th>
+            <th>Output</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="vertical-align: top;">
+                <pre style="width: auto; white-space: pre-wrap;"><code data-trim class="html">
 								<img alt="erondu's collection" src="https://source.unsplash.com/user/erondu/160x90">
-								</code></pre></td>
-								<td><img src="https://source.unsplash.com/user/erondu/160x90">
-								</a></td>
-							</tr>
-							<tr>
-								<td style="vertical-align: top;"><pre style="width: auto;"><code data-trim class="html">
+								</code></pre>
+              </td>
+              <td>
+                <img src="https://source.unsplash.com/user/erondu/160x90">
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td style="vertical-align: top;">
+                <pre style="width: auto;"><code data-trim class="html">
 								Photos by
 								<a href="https://unsplash.com/@erondu">erondu</a>
 								on
 								<a href="https://unsplash.com/">Unsplash</a>
-								</code></pre></td>
-								<td>Photos by
-								<a href="https://unsplash.com/@erondu">erondu</a>
-								on
-								<a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-								</a></td>
-							</tr>
-						</tbody>
-					</table>
-				</section>
-				<section>
-					<table>
-						<thead>
-							<th>HTML</th>
-							<th>Output</th>
-						</thead>
-						<tbody>
-							<tr>
-								<td style="vertical-align: top;"><pre style="width: auto;"><code data-trim>
+								</code></pre>
+              </td>
+              <td>Photos by
+                <a href="https://unsplash.com/@erondu">erondu</a>
+                on
+                <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section>
+        <table>
+          <thead>
+            <th>HTML</th>
+            <th>Output</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="vertical-align: top;">
+                <pre style="width: auto;"><code data-trim>
 								<ul>
 								  <li>Item 1</li>
 								  <li>Item 2</li>
 								  <li>Item 3</li>
 								</ul>
-								</code></pre></td>
-								<td><ul>
-								  <li>Item 1</li>
-								  <li>Item 2</li>
-								  <li>Item 3</li>
-								</ul></td>
-							</tr>
-							<tr>
-								<td style="vertical-align: top;"><pre style="width: auto;"><code data-trim>
+								</code></pre>
+              </td>
+              <td>
+                <ul>
+                  <li>Item 1</li>
+                  <li>Item 2</li>
+                  <li>Item 3</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td style="vertical-align: top;">
+                <pre style="width: auto;"><code data-trim>
 								<ol>
 								  <li>Item 1</li>
 								  <li>Item 2</li>
 								  <li>Item 3</li>
 								</ol>
-								</code></pre></td>
-								<td><ol>
-								  <li>Item 1</li>
-								  <li>Item 2</li>
-								  <li>Item 3</li>
-								</ol></td>
-							</tr>
-						</tbody>
-					</table>
-				</section>
-				<section>
-					<table>
-						<thead>
-							<th>HTML</th>
-							<th>Output</th>
-						</thead>
-						<tbody>
-							<tr>
-								<td style="vertical-align: top;" ><pre style="width: auto;"><code data-trim>
+								</code></pre>
+              </td>
+              <td>
+                <ol>
+                  <li>Item 1</li>
+                  <li>Item 2</li>
+                  <li>Item 3</li>
+                </ol>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section>
+        <table>
+          <thead>
+            <th>HTML</th>
+            <th>Output</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="vertical-align: top;">
+                <pre style="width: auto;"><code data-trim>
 								<table>
 								<thead>
 								  <tr>
@@ -283,58 +349,61 @@
 								  </tr>
 								</tfoot>
 								</table>
-								</code></pre></td>
-								<td><table style="font-size: 1.5rem;">
-								<thead>
-								  <tr>
-								  <th>Header content 1</th>
-								  <th>Header content 2</th>
-								  </tr>
-								</thead>
-								<tbody>
-								  <tr>
-								  <td>Body content 1</td>
-								  <td>Body content 2</td>
-								  </tr>
-								</tbody>
-								<tfoot>
-									<tr>
-									<td>Footer content 1</td>
-									<td>Footer content 2</td>
-									</tr>
-								</tfoot>
-								</table></td>
-							</tr>
-						</tbody>
-					</table>
-				</section>
-				<section>
-					<h3>And many more!</h3>
-					<div>Such as video, article, button, form...</div>
-					<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">MDN Resource</a>
-				</section>
-				<section>
-					<h2>CSS</h2>
-					<h3>
-						<b>C</b>ascading
-						<b>S</b>tyle
-						<b>S</b>heets
-					</h3>
-					<div class="fragment fade-up">Easy way to describe how
-						<mark>HTML elements</mark> should be displayed</div>
-				</section>
-				<section>
-					<h3>Ways to use css</h3>
-					<h4>inline-style</h4>
-					<pre style="text-align: center;"><code data-trim>
+								</code></pre>
+              </td>
+              <td>
+                <table style="font-size: 1.5rem;">
+                  <thead>
+                    <tr>
+                      <th>Header content 1</th>
+                      <th>Header content 2</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Body content 1</td>
+                      <td>Body content 2</td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td>Footer content 1</td>
+                      <td>Footer content 2</td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section>
+        <h3>And many more!</h3>
+        <div>Such as video, article, button, form...</div>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">MDN Resource</a>
+      </section>
+      <section>
+        <h2>CSS</h2>
+        <h3>
+          <b>C</b>ascading
+          <b>S</b>tyle
+          <b>S</b>heets
+        </h3>
+        <div class="fragment fade-up">Easy way to describe how
+          <mark>HTML elements</mark> should be displayed</div>
+      </section>
+      <section>
+        <h3>Ways to use css</h3>
+        <h4>inline-style</h4>
+        <pre style="text-align: center;"><code data-trim>
 						<div style="background: yellow;">Hello</div>
 					</code></pre>
-					<div style="background: yellow;">Hello</div>
-				</section>
-				<section>
-					<h3>Ways to use css</h3>
-					<h4>id</h4>
-					<pre><code data-trim>
+        <div style="background: yellow;">Hello</div>
+      </section>
+      <section>
+        <h3>Ways to use css</h3>
+        <h4>id</h4>
+        <pre><code data-trim>
 						<style>
 						#hello {
 						  background: yellow;
@@ -342,17 +411,17 @@
 						</style>
 						<div id="hello">Hello</div>
 					</code></pre>
-					<style>
-						#hello {
-							background: yellow;
-						}
-					</style>
-					<div id="hello">Hello</div>
-				</section>
-				<section>
-					<h3>Ways to use css</h3>
-					<h4>class</h4>
-					<pre><code data-trim>
+        <style>
+          #hello {
+            background: yellow;
+          }
+        </style>
+        <div id="hello">Hello</div>
+      </section>
+      <section>
+        <h3>Ways to use css</h3>
+        <h4>class</h4>
+        <pre><code data-trim>
 						<style>
 						.hello {
 						  background: yellow;
@@ -360,118 +429,122 @@
 						</style>
 						<div class="hello">Hello</div>
 					</code></pre>
-					<style>
-						.hello {
-							background: yellow;
-						}
-					</style>
-					<div class="hello">Hello</div>
-				</section>
-				<section>
-					<h3>Ways to use css</h3>
-					<ul>
-						<li>inline-style</li>
-						<li>id</li>
-						<li><mark>class</mark></li>
-					</ul>
-					<div>
-						Use class. They're reusable, easy to read and maintain.
-					</div>
-				</section>
-				<section>
-					<h3>Stylistic css properties</h3>
-					<h4>Let's try them out</h4>
-					<ul>
-						<li>background</li>
-						<li>color</li>
-						<li>font-family</li>
-						<li>font-weight</li>
-					</ul>
-				</section>
-				<section>
-					<h3>CSS size units</h3>
-					<dl style="font-size: 0.9em;">
-						<div>
-							<dt>px</dt>
-							<dd>pixels</dd>
-						</div>
-						<div class="fragment fade-up">
-							<dt>em</dt>
-							<dd>relative to parent font-size</dd>
-							<dd style="line-height: 1;"><small>originally a reference to the width of the capital M</small></dd>
-						</div>
-						<div class="fragment fade-up">
-							<dt>rem</dt>
-							<dd>relative to html font-size</dd>
-						</div>
-						<div class="fragment fade-up">
-							<dt>%</dt>
-							<dd>percentage with respect to width</dd>
-						</div>
-						<div class="fragment fade-up">
-							<dt>fr</dt>
-							<dd>fraction with respect so siblings</dd>
-						</div>
-					</dl>
-				</section>
-				<section>
-					<h3>Sizing css properties</h3>
-					<ul>
-						<li>width & height</li>
-						<li>padding</li>
-						<li>border</li>
-						<li>margin</li>
-					</ul>
-				</section>
-				<section>
-					<h3>CSS Box-model</h3>
-					<mark>Important</mark>
-					<div style="background: lightpink; padding: 1rem;">
-						margin
-						<div style="background: cornflowerblue; padding: 0 1rem 1rem; margin: 1rem;">
-							border
-							<div style="background: lemonchiffon; padding: 1rem; border: 1.5rem solid cornflowerblue; margin-top: -1rem;">
-								padding
-								<div style="background: paleturquoise; padding: 1rem; margin: 1rem;">content (width & height)</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section>
-					<h3>CSS Box-model</h3>
-					<div>
-						Size of a box (width & height) is accounting for content only.
-					</div>
-					<div style="margin-top: 2rem;">
-						Modern css uses <pre style="text-align: center;"><code>box-sizing: border-box;</code></pre>
-						as it's easier to calculate
-					</div>
-				</section>
-				<section>
-					<h3>Flexbox</h3>
-					<div>
-						Used for aligning subcontent along a single axis.
-					</div>
-					<pre style="text-align: center;"><code data-trim>
+        <style>
+          .hello {
+            background: yellow;
+          }
+        </style>
+        <div class="hello">Hello</div>
+      </section>
+      <section>
+        <h3>Ways to use css</h3>
+        <ul>
+          <li>inline-style</li>
+          <li>id</li>
+          <li>
+            <mark>class</mark>
+          </li>
+        </ul>
+        <div>
+          Use class. They're reusable, easy to read and maintain.
+        </div>
+      </section>
+      <section>
+        <h3>Stylistic css properties</h3>
+        <h4>Let's try them out</h4>
+        <ul>
+          <li>background</li>
+          <li>color</li>
+          <li>font-family</li>
+          <li>font-weight</li>
+        </ul>
+      </section>
+      <section>
+        <h3>CSS size units</h3>
+        <dl style="font-size: 0.9em;">
+          <div>
+            <dt>px</dt>
+            <dd>pixels</dd>
+          </div>
+          <div class="fragment fade-up">
+            <dt>em</dt>
+            <dd>relative to parent's font-size</dd>
+            <dd style="line-height: 1;">
+              <small>originally a reference to the width of the capital M</small>
+            </dd>
+          </div>
+          <div class="fragment fade-up">
+            <dt>rem</dt>
+            <dd>relative to &lt;html&gt;'s font-size</dd>
+          </div>
+          <div class="fragment fade-up">
+            <dt>%</dt>
+            <dd>percentage with respect to width</dd>
+          </div>
+          <div class="fragment fade-up">
+            <dt>fr</dt>
+            <dd>fraction with respect to siblings</dd>
+          </div>
+        </dl>
+      </section>
+      <section>
+        <h3>Sizing css properties</h3>
+        <ul>
+          <li>width & height</li>
+          <li>padding</li>
+          <li>border</li>
+          <li>margin</li>
+        </ul>
+      </section>
+      <section>
+        <h3>CSS Box-model</h3>
+        <mark>Important</mark>
+        <div style="background: lightpink; padding: 1rem;">
+          margin
+          <div style="background: cornflowerblue; padding: 0 1rem 1rem; margin: 1rem;">
+            border
+            <div style="background: lemonchiffon; padding: 1rem; border: 1.5rem solid cornflowerblue; margin-top: -1rem;">
+              padding
+              <div style="background: paleturquoise; padding: 1rem; margin: 1rem;">content (width & height)</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h3>CSS Box-model</h3>
+        <div>
+          Size of a box (width & height) is accounting for content only.
+        </div>
+        <div style="margin-top: 2rem;">
+          Modern css uses
+          <pre style="text-align: center;"><code>box-sizing: border-box;</code></pre> as it's easier to calculate
+        </div>
+      </section>
+      <section>
+        <h3>Flexbox</h3>
+        <div>
+          Used for aligning subcontent along a single axis.
+        </div>
+        <pre style="text-align: center;"><code data-trim>
 						display: flex;
 					</code></pre>
-				</section>
-				<section>
-					<h3>Flexbox</h3>
-					<div>
-						<style>
-						  #gallery {
-							display: flex;
-							justify-content: space-around;
-						  }
-						</style>
-						<ul id="gallery">
-							<li>1</li>
-							<li>2</li>
-							<li>3</li>
-						</ul>
-					</div>
-					<pre><code data-trim>
+      </section>
+      <section>
+        <h3>Flexbox</h3>
+        <div>
+          <style>
+            #gallery {
+              display: flex;
+              justify-content: space-around;
+            }
+          </style>
+          <ul id="gallery">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+          </ul>
+        </div>
+        <pre><code data-trim>
 						display: flex;
 						/* by default */
 						flex-direction: row;
@@ -480,59 +553,56 @@
 						/* y-axis in row, x-axis in col */
 						justify-content: space-around;
 					</code></pre>
-				</section>
-				<section>
-					<h3>Grid</h3>
-					<div>
-						Used for two-dimensional layout.
-						Great for page structures.
-					</div>
-					<pre style="text-align: center;"><code data-trim>
+      </section>
+      <section>
+        <h3>Grid</h3>
+        <div>
+          Used for two-dimensional layout. Great for page structures.
+        </div>
+        <pre style="text-align: center;"><code data-trim>
 						display: grid;
 					</code></pre>
-				</section>
-				<section>
-					<h3>Grid</h3>
-					<div>
-						<style>
-						#page {
-						  display: grid;
-						  grid-template-areas: "head head"
-						    				   "nav  main"
-						    				   "nav  foot";
-						  grid-template-rows: repeat(1fr, 3);
-						  grid-template-columns: 150px 1fr;
-						}
+      </section>
+      <section>
+        <h3>Grid</h3>
+        <div>
+          <style>
+            #page {
+              display: grid;
+              grid-template-areas: "head head" "nav  main" "nav  foot";
+              grid-template-rows: repeat(1fr, 3);
+              grid-template-columns: 150px 1fr;
+            }
 
-						#header {
-						  grid-area: head;
-						  background-color: #8ca0ff;
-						}
+            #header {
+              grid-area: head;
+              background-color: #8ca0ff;
+            }
 
-						#nav {
-						  grid-area: nav;
-						  background-color: #ffa08c;
-						}
+            #nav {
+              grid-area: nav;
+              background-color: #ffa08c;
+            }
 
-						#main {
-						  grid-area: main;
-						  background-color: #ffff64;
-						}
+            #main {
+              grid-area: main;
+              background-color: #ffff64;
+            }
 
-						#footer {
-						  grid-area: foot;
-						  background-color: #8cffa0;
-						}
-						</style>
-						<div id="page">
-						<header id="header">Header</header>
-						<nav id="nav">Nav</nav>
-						<main id="main">Main area</main>
-						<footer id="footer">Footer</footer>
-						</div>
-					</div>
-					<div style="display: flex; align-items: start;">
-						<pre><code data-trim>
+            #footer {
+              grid-area: foot;
+              background-color: #8cffa0;
+            }
+          </style>
+          <div id="page">
+            <header id="header">Header</header>
+            <nav id="nav">Nav</nav>
+            <main id="main">Main area</main>
+            <footer id="footer">Footer</footer>
+          </div>
+        </div>
+        <div style="display: flex; align-items: start;">
+          <pre><code data-trim>
 							.page {
 							  display: grid;
 							  grid-template-areas: "head head"
@@ -547,7 +617,7 @@
 							  background-color: #8ca0ff;
 							}
 						</code></pre>
-						<pre><code data-trim>
+          <pre><code data-trim>
 							.nav {
 							  grid-area: nav;
 							  background-color: #ffa08c;
@@ -563,63 +633,73 @@
 							  background-color: #8cffa0;
 							}
 						</code></pre>
-					</div>
-				</section>
-				<section>
-					<h2>Bonus trick</h2>
-					<ol>
-						<li>right click browser > inspect element</li>
-						<li>backspace/delete to <mark>remove</mark> html element</li>
-					</ol>
-					<p>
-						Useful for hiding ads/modals.
-					</p>
-				</section>
-				<section>
-					<h2>Sharing your work</h2>
-					<p>
-						Upload all your files to sites like
-						<ul>
-							<li><a href="https://www.netlify.com">Netlify</a></li>
-							<li><a href="https://zeit.co/now">Zeit now</a></li>
-							<li><a href="https://pages.github.com/">Github pages</a></li>
-						</ul>
-					</p>
-					<p>
-						then buying a domain from a registrar like
-						<ul>
-							<li>
-								<a href="https://www.namecheap.com/">Namecheap</a>
-							</li>
-							<li>
-								<a href="https://www.bluehost.com/">Bluehost</a>
-							</li>
-						</ul>
-					</p>
-				</section>
-				<section>
-					<h2>NUSHackers</h2>
-					<div><a href="https://sdf">Feedback</a></div>
-				</section>
-			</div>
-		</div>
+        </div>
+      </section>
+      <section>
+        <h2>Bonus trick</h2>
+        <ol>
+          <li>right click browser > inspect element</li>
+          <li>backspace/delete to
+            <mark>remove</mark> html element</li>
+        </ol>
+        <p>
+          Useful for hiding ads/modals.
+        </p>
+      </section>
+      <section>
+        <h2>Sharing your work</h2>
+        <p>
+          Upload all your files to sites like
+          <ul>
+            <li>
+              <a href="https://www.netlify.com">Netlify</a>
+            </li>
+            <li>
+              <a href="https://zeit.co/now">Zeit now</a>
+            </li>
+            <li>
+              <a href="https://pages.github.com/">Github pages</a>
+            </li>
+          </ul>
+        </p>
+        <p>
+          then buy a domain from a registrar like
+          <ul>
+            <li>
+              <a href="https://www.namecheap.com/">Namecheap</a>
+            </li>
+            <li>
+              <a href="https://www.bluehost.com/">Bluehost</a>
+            </li>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <h2>NUSHackers</h2>
+        <div>
+          <a href="https://sdf">Feedback</a>
+        </div>
+      </section>
+    </div>
+  </div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				history: true,
-				dependencies: [
-					// { src: 'plugin/markdown/marked.js' },
-					// { src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      history: true,
+      dependencies: [
+        // { src: 'plugin/markdown/marked.js' },
+        // { src: 'plugin/markdown/markdown.js' },
+        { src: 'plugin/notes/notes.js', async: true },
+        { src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } }
+      ]
+    });
+  </script>
+</body>
+
 </html>

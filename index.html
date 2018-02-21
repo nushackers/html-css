@@ -26,11 +26,25 @@
 			<div class="slides">
 				<section>
 					<h1>HTML & CSS</h1>
-					<small>https://nushackers.github.io/html-css</small>
+					<p>Slides at:
+					<span style="display: block;">https://goo.gl/2JLRGu</span>
+					<span style="display: block;">https://nushackers.github.io/html-css</span>
+					</p>
 				</section>
 				<section>
 					<h2>Internet</h2>
 					<h3>Gateway to the world</h3>
+				</section>
+				<section>
+					<h2>HTML</h2>
+					<h3>
+						<b>H</b>yper
+						<b>T</b>ext
+						<b>M</b>arkup
+						<b>L</b>anguage
+					</h3>
+					<div class="fragment fade-up">Easy way to describe how
+						<mark>text</mark> should be displayed</div>
 				</section>
 				<section>
 					<h3>When you type: google.com</h3>
@@ -40,16 +54,6 @@
 						<li class="fragment fade-up">you: oh I need the css file too</li>
 						<li class="fragment fade-up" style="margin-left: 5rem; background: yellow;">server: here's the css</li>
 					</ul>
-				</section>
-				<section>
-					<h3>
-						<b>H</b>yper
-						<b>T</b>ext
-						<b>M</b>arkup
-						<b>L</b>anguage
-					</h3>
-					<div class="fragment fade-up">Easy way to describe how
-						<mark>text</mark> should be displayed</div>
 				</section>
 				<section>
 					<h2>Tags</h2>
@@ -129,12 +133,21 @@
 						&lt;/html&gt;
 					</code></pre>
 					</div>
+					<a href="https://raw.githubusercontent.com/nushackers/html-css/master/index.html">HTML for these slides</a>
 				</section>
 				<section>
 					<h3>Hands on</h3>
 					<a href="https://thimble.mozilla.org/en-US/projects/new">
 						https://thimble.mozilla.org/projects/new
 					</a>
+					<p>
+						<mark>Alternatively,</mark>
+						<ol>
+							<li>Create a "index.html" file</li>
+							<li>Drag file into browser</li>
+							<li>Edit, save, then reload browser</li>
+						</ol>
+					</p>
 				</section>
 				<section>
 					<table>
@@ -163,6 +176,15 @@
 							</tr>
 						</tbody>
 					</table>
+				</section>
+				<section>
+					<h2>Attributes</h2>
+					<h4>give tags meaning</h4>
+					Used in the opening tag
+					<div>
+						<mark>&lt;element attr="thing"&gt;</mark>content
+						<mark>&lt;/element&gt;</mark>
+					</div>
 				</section>
 				<section>
 					<table>
@@ -350,9 +372,9 @@
 					<ul>
 						<li>inline-style</li>
 						<li>id</li>
-						<li class="fragment fade-up"><mark>class</mark></li>
+						<li><mark>class</mark></li>
 					</ul>
-					<div class="fragment fade-up">
+					<div>
 						Use class. They're reusable, easy to read and maintain.
 					</div>
 				</section>
@@ -368,17 +390,29 @@
 				</section>
 				<section>
 					<h3>CSS size units</h3>
-					<dl>
-						<dd>px</dd>
+					<dl style="font-size: 0.9em;">
+						<div>
+							<dt>px</dt>
+							<dd>pixels</dd>
+						</div>
+						<div class="fragment fade-up">
+							<dt>em</dt>
+							<dd>relative to parent font-size</dd>
+							<dd style="line-height: 1;"><small>originally a reference to the width of the capital M</small></dd>
+						</div>
+						<div class="fragment fade-up">
+							<dt>rem</dt>
+							<dd>relative to html font-size</dd>
+						</div>
+						<div class="fragment fade-up">
+							<dt>%</dt>
+							<dd>percentage with respect to width</dd>
+						</div>
+						<div class="fragment fade-up">
+							<dt>fr</dt>
+							<dd>fraction with respect so siblings</dd>
+						</div>
 					</dl>
-					<ul>
-						<li>px - pixels</li>
-						<li>em - em to font-size</li>
-						<li>rem - rem to base font-size</li>
-						<li>%  - percentage wrt width</li>
-						<li>fr - fraction</li>
-					</ul>
-					<small>There's more, but not commonly used.</small>
 				</section>
 				<section>
 					<h3>Sizing css properties</h3>
@@ -394,11 +428,11 @@
 					<mark>Important</mark>
 					<div style="background: lightpink; padding: 1rem;">
 						margin
-						<div style="background: cornflowerblue; padding: 1rem;">
+						<div style="background: cornflowerblue; padding: 0 1rem 1rem; margin: 1rem;">
 							border
-							<div style="background: lemonchiffon; padding: 1rem;">
+							<div style="background: lemonchiffon; padding: 1rem; border: 1.5rem solid cornflowerblue; margin-top: -1rem;">
 								padding
-								<div style="background: paleturquoise; padding: 1rem;">content</div>
+								<div style="background: paleturquoise; padding: 1rem; margin: 1rem;">content (width & height)</div>
 							</div>
 						</div>
 					</div>
@@ -415,14 +449,11 @@
 				</section>
 				<section>
 					<h3>Flexbox</h3>
-					<pre><code data-trim>
+					<div>
+						Used for aligning subcontent along a single axis.
+					</div>
+					<pre style="text-align: center;"><code data-trim>
 						display: flex;
-						/* by default */
-						flex-direction: row;
-						/* x-axis in row, y-axis in col */
-						align-items: center;
-						/* y-axis in row, x-axis in col */
-						justify-content: center;
 					</code></pre>
 				</section>
 				<section>
@@ -444,10 +475,10 @@
 						display: flex;
 						/* by default */
 						flex-direction: row;
-						/* y-axis in row, x-axis in col */
-						align-items: center;
 						/* x-axis in row, y-axis in col */
-						justify-content: center;
+						align-items: center;
+						/* y-axis in row, x-axis in col */
+						justify-content: space-around;
 					</code></pre>
 				</section>
 				<section>
@@ -456,7 +487,7 @@
 						Used for two-dimensional layout.
 						Great for page structures.
 					</div>
-					<pre><code data-trim>
+					<pre style="text-align: center;"><code data-trim>
 						display: grid;
 					</code></pre>
 				</section>
@@ -536,8 +567,35 @@
 				</section>
 				<section>
 					<h2>Bonus trick</h2>
-					<div>Right click browser > inspect element</div>
-					<div>backspace/delete to remove html element</div>
+					<ol>
+						<li>right click browser > inspect element</li>
+						<li>backspace/delete to <mark>remove</mark> html element</li>
+					</ol>
+					<p>
+						Useful for hiding ads/modals.
+					</p>
+				</section>
+				<section>
+					<h2>Sharing your work</h2>
+					<p>
+						Upload all your files to sites like
+						<ul>
+							<li><a href="https://www.netlify.com">Netlify</a></li>
+							<li><a href="https://zeit.co/now">Zeit now</a></li>
+							<li><a href="https://pages.github.com/">Github pages</a></li>
+						</ul>
+					</p>
+					<p>
+						then buying a domain from a registrar like
+						<ul>
+							<li>
+								<a href="https://www.namecheap.com/">Namecheap</a>
+							</li>
+							<li>
+								<a href="https://www.bluehost.com/">Bluehost</a>
+							</li>
+						</ul>
+					</p>
 				</section>
 				<section>
 					<h2>NUSHackers</h2>

@@ -36,6 +36,7 @@
       <section>
         <h2>Internet</h2>
         <h3>Gateway to the world</h3>
+        <a href="https://thimbleprojects.org/nushackers/421703/">What we'll be making today</a>
       </section>
       <section>
         <h2>HTML</h2>
@@ -518,6 +519,49 @@
         <div style="margin-top: 2rem;">
           Modern css uses
           <pre style="text-align: center;"><code>box-sizing: border-box;</code></pre> as it's easier to calculate
+        </div>
+      </section>
+      <section>
+        <h3>CSS Selectors</h3>
+        <div>
+          Specifying the css elements you want to target
+        </div>
+        <div style="margin-top: 2rem;">
+          Targetting all th within the class table
+          <pre><code data-trim>
+            .table th {
+              padding: 1rem;
+            }
+          </code></pre>
+          Targetting the direct tbody within the class table
+          <pre><code data-trim>
+            .table > tbody {
+              background: red;
+            }
+          </code></pre>
+        </div>
+      </section>
+      <section>
+        <h3>CSS Specificity</h3>
+        <div>
+          Think of it as priority of css for elements.
+        </div>
+        <div>
+          The more <mark>specific</mark> your selectors, the higher precedence of css
+        </div>
+        <div style="margin-top: 2rem;">
+          This is less specific than
+          <pre><code data-trim>
+            .table th {
+              padding: 1rem;
+            }
+          </code></pre>
+          this
+          <pre><code data-trim>
+            .table > tbody {
+              background: red;
+            }
+          </code></pre>
         </div>
       </section>
       <section>
